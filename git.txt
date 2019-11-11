@@ -1,0 +1,5 @@
+git log --oneline
+git cherry -v BRANCH_NAME
+git cherry -v BRANCH_NAME | wc -l
+pick
+squash
