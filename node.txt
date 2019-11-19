@@ -1,1 +1,5 @@
 node -v
+
+for(const element of elements){
+    // executes sequentially
+}
