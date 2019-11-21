@@ -1,0 +1,20 @@
+knex('books')
+  .where('published_date', '<', 2000)
+  .update({
+    status: 'archived',
+    thisKeyIsSkipped: undefined
+  })
+Outputs:
+update `books` set `status` = 'archived' where `published_date` < 2000
+
+// Returns [1] in "mysql", "sqlite", "oracle"; [] in "postgresql" unless the 'returning' parameter is set.
+knex('books').update('title', 'Slaughterhouse Five')
+Outputs:
+update `books` set `title` = 'Slaughterhouse Five'
+
+// Returns [ { id: 42, title: "The Hitchhiker's Guide to the Galaxy" } ]
+knex('books')
+  .where({ id: 42 })
+  .update({ title: "The Hitchhiker's Guide to the Galaxy" }, ['id', 'title'])
+Outputs:
+update `books` set `title` = 'The Hitchhiker\'s Guide to the Galaxy' where `id` = 42
