@@ -10,3 +10,5 @@ postgresql://user@localhost
 postgresql://user:secret@localhost
 postgresql://other@localhost/otherdb?connect_timeout=10&application_name=myapp
 postgresql://localhost/mydb?user=other&password=secret
+
+COPY table_name TO '/tmp/file_name.csv' WITH (FORMAT CSV, HEADER);
