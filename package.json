@@ -1,0 +1,27 @@
+{
+  "name": "khamurdik_cheat_sheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khamurdik/cheatsheet.git"
+  },
+  "keywords": [],
+  "author": "Andriy Khamurda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khamurdik/cheatsheet/issues"
+  },
+  "homepage": "https://github.com/Khamurdik/cheatsheet#readme",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0"
+  }
+}
